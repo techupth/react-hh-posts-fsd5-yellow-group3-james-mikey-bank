@@ -1,28 +1,24 @@
+import PostItem from "./PostItem";
+
 function Posts() {
   return (
     <div class="app-wrapper">
       <h1 class="app-title">Posts</h1>
       <div class="post-list">
-        <div class="post-item">
-          <div class="post-header">
-            <h2>Post Title #1</h2>
-            <div class="post-social-media-stats">
-              <span class="stats-topic">Likes: </span>
-              <span class="post-likes">10</span>
-            </div>
-          </div>
-          <p class="post-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            vel turpis vestibulum, aliquet ipsum vitae, auctor risus. Morbi
-            tincidunt, leo non molestie consectetur, elit libero faucibus
-            tellus, sed fringilla tortor libero sit amet odio. Maecenas sed ante
-            condimentum mauris euismod pellentesque eu eu justo...
-          </p>
-          <div class="post-actions">
-            <button class="like-button">Like</button>
-            <button class="dislike-button">Dislike</button>
-          </div>
-        </div>
+        <PostItem title="Post Title #1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          perspiciatis, et, magni voluptates fugiat recusandae id beatae
+          cupiditate ipsa impedit porro illum minus quasi accusantium tenetur
+          eveniet libero quas! Nam dolorem nobis repudiandae, tenetur harum est
+          eaque error architecto omnis dicta sed totam amet porro deleniti
+          reiciendis laboriosam iusto soluta.
+        </PostItem>
+        <PostItem title="Post Title #2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod maxime
+          quisquam ut tempore a. Laudantium magnam tempore quasi expedita!
+          Molestias, numquam. Voluptates quaerat eaque facere nostrum
+          praesentium aspernatur eius assumenda!
+        </PostItem>
       </div>
     </div>
   );
