@@ -21,21 +21,15 @@ function Posts() {
     setPostsData((prevPosts) => {
       return prevPosts.map((post) => {
         if (post.id === id) {
-          if (innerText === "Like") {
-            return {
-              ...post,
-              likeCount: post.likeCount++,
-            };
-          } else {
-            if (post.likeCount > 0) {
-              return {
-                ...post,
-                likeCount: post.likeCount--,
-              };
-            } else {
-              return post;
-            }
-          }
+          const likeCount =
+            innerText === "Like"
+              ? post.likeCount + 1
+              : Math.max(0, post.likeCount - 1);
+
+          return {
+            ...post,
+            likeCount,
+          };
         } else {
           return post;
         }
